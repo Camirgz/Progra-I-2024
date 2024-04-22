@@ -1,3 +1,5 @@
+package PrimerExamen.PrimerExamen;
+
 import java.util.Scanner;
 
 public class Tarea1 {

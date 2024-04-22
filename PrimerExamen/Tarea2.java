@@ -1,4 +1,4 @@
-package PrimerExamen;
+package PrimerExamen.PrimerExamen;
 
 import java.util.Scanner;
 
