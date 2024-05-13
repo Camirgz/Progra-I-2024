@@ -5,6 +5,11 @@ import java.util.Random;
 class Matriz {
     private int[][] matriz;
 
+    // Método para obtener la matriz
+    public int[][] getMatriz() {
+        return this.matriz;
+    }
+
     // Constructor
     public Matriz(int M, int N) {
         matriz = new int[M][N];
@@ -23,7 +28,9 @@ class Matriz {
 
     // Método para multiplicar esta matriz por otra matriz
     public int[][] multiplicar(Matriz otraMatriz) {
+
         int[][] otraMatrizData = otraMatriz.getMatriz();
+
         if (matriz[0].length != otraMatrizData.length) {
             System.out.println("No se pueden multiplicar las matrices. Dimensiones incompatibles.");
             return new int[0][0]; // Matriz vacía
@@ -40,7 +47,6 @@ class Matriz {
                 }
             }
         }
-
         return resultado;
     }
 
@@ -52,19 +58,5 @@ class Matriz {
             }
             System.out.println();
         }
-    }
-
-    public static void imprimirMatrizVacia(int filas, int columnas){
-        for (int i = 0; i < filas; i++) {
-            for (int j = 0; j < columnas; j++) {
-                System.out.print(0 + " ");
-            }
-            System.out.println();
-        }
-    }
-
-    // Método para obtener la matriz
-    public int[][] getMatriz() {
-        return this.matriz;
     }
 }
