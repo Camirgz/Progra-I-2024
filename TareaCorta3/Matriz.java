@@ -54,6 +54,15 @@ class Matriz {
         }
     }
 
+    public static void imprimirMatrizVacia(int filas, int columnas){
+        for (int i = 0; i < filas; i++) {
+            for (int j = 0; j < columnas; j++) {
+                System.out.print(0 + " ");
+            }
+            System.out.println();
+        }
+    }
+
     // Método para obtener la matriz
     public int[][] getMatriz() {
         return this.matriz;
