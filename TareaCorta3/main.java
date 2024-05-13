@@ -11,8 +11,8 @@ public class main {
         Scanner sc = new Scanner(System.in);
 
         // Multiplicando las matrices
-        int filas = funciones.obtenerNumero(sc, "Hola! \nIngrese el número de filas: ");
-        int columnas = funciones.obtenerNumero(sc, "Ingrese el número de columnas: ");
+        int filas = Funciones.obtenerNumero(sc, "Hola! \nIngrese el número de filas: ");
+        int columnas = Funciones.obtenerNumero(sc, "Ingrese el número de columnas: ");
 
         // Imprimiendo las matrices y el resultado
         System.out.println("Matriz 1:");
